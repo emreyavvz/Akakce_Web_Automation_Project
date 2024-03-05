@@ -9,13 +9,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class TC_0403 extends BaseDriver {
     @Test
     public void TC_0403() {
-
         driver.get("https://www.akakce.com/");
-
 
         WebElement girisYap = driver.findElement(By.linkText("Giriş Yap"));
         girisYap.click();
-
 
         WebElement girisYap2 = driver.findElement(By.cssSelector("[id='lfb']"));
         girisYap2.click();

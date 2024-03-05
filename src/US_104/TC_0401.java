@@ -11,11 +11,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class TC_0401 extends BaseDriver {
 
     @Test
-    public void  TC_0401() {
-
-
+    public void TC_0401() {
         driver.get("https://www.akakce.com/");
-
 
         WebElement giris = driver.findElement(By.linkText("Giriş Yap"));
         giris.click();
@@ -31,7 +28,6 @@ public class TC_0401 extends BaseDriver {
         WebElement GirisClick = driver.findElement(By.xpath("//input[@id=\"lfb\"]"));
         GirisClick.click();
 
-
         WebElement hesabim = driver.findElement(By.xpath("//*[@id=\"H_a_v8\"]"));
         hesabim.click();
         Actions actions = new Actions(driver);
@@ -41,7 +37,6 @@ public class TC_0401 extends BaseDriver {
         hesabimclick.click();
 
         WebElement hesapcontrol = driver.findElement(By.xpath("//*[@id=\"AP\"]/span[1]/span/b"));
-
 
         if (hesapcontrol.getText().contains("Bug Busters")) {
             System.out.println("TEST PASSED");

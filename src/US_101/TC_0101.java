@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class TC_0101 extends BaseDriver {
     @Test
-    public void Test1() {
+    public void TC_0101() {
         driver.get("https://www.akakce.com");
         driver.manage().window().maximize();
 

@@ -12,9 +12,7 @@ public class TC_0402 extends BaseDriver {
     @Test
 
     public void TC_0402() {
-
         driver.get("https://www.akakce.com/");
-
 
         WebElement giris = driver.findElement(By.linkText("Giriş Yap"));
         giris.click();
@@ -30,9 +28,8 @@ public class TC_0402 extends BaseDriver {
         WebElement GirisClick = driver.findElement(By.xpath("//input[@id=\"lfb\"]"));
         GirisClick.click();
 
-
         MyFunc.Bekle(2);
-//
+
         WebElement hatali = driver.findElement(By.xpath("//*[text()='Şifre doğru değil. Lütfen kontrol edip yeniden deneyin.']"));
 
         Assert.assertTrue("Bulunamadı! ", hatali.getText().contains("Şifre doğru değil. Lütfen kontrol edip yeniden deneyin."));

@@ -11,24 +11,25 @@ public class TC_0301 extends BaseDriver {
     public void TC_0301() {
 
         driver.get("https://www.akakce.com/akakcem/giris/");
+        driver.manage().window().maximize();
 
         MyFunc.Bekle(1);
 
-        WebElement girisEposta=driver.findElement(By.cssSelector("[id='life']"));
+        WebElement girisEposta = driver.findElement(By.cssSelector("[id='life']"));
         girisEposta.sendKeys("technostudy@protonmail.com");
 
-        WebElement girissifre=driver.findElement(By.cssSelector("[id='lifp']"));
+        WebElement girissifre = driver.findElement(By.cssSelector("[id='lifp']"));
         girissifre.sendKeys("Test123321.");
 
-        WebElement girisYapButton=driver.findElement(By.cssSelector("[id='lfb']"));
+        WebElement girisYapButton = driver.findElement(By.cssSelector("[id='lfb']"));
         girisYapButton.click();
 
-        WebElement Hesabim=driver.findElement(By.cssSelector("[id='H_a_v8']"));
+        WebElement Hesabim = driver.findElement(By.cssSelector("[id='H_a_v8']"));
         Hesabim.click();
 
         MyFunc.Bekle(1);
 
-        WebElement cikisYap=driver.findElement(By.cssSelector("[href='#Çık']"));
+        WebElement cikisYap = driver.findElement(By.cssSelector("[href='#Çık']"));
         cikisYap.click();
 
         if (driver.getCurrentUrl().equals("https://www.akakce.com/")) {

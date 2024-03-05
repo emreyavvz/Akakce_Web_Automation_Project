@@ -5,6 +5,6 @@ import org.junit.Test;
 
 public class TC_0601 extends BaseDriver {
     @Test
-    public void Test1() {
+    public void TC_0601() {
     }
 }

@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TC_0102 extends BaseDriver {
     @Test
-    public void Test1() {
+    public void TC_0102() {
         driver.get("https://www.akakce.com");
         driver.manage().window().maximize();
 
