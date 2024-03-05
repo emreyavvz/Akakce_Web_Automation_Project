@@ -9,7 +9,9 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class TC_0401 extends BaseDriver {
-    public void Test TC_0401() {
+
+    @Test
+    public void  TC_0401() {
 
 
         driver.get("https://www.akakce.com/");
