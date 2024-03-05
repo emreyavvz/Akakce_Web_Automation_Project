@@ -35,5 +35,6 @@ public class TC_0201 extends BaseDriver {
 //        7. Eğer kullanıcı adı doğru görünüyorsa, hesap doğrulama
 //        sürecinin başarıyla tamamlandığını onaylar.
         System.out.println("Kullanıcı Doğrulandı:  " + dogrulama.getText());
+        BekleKapat();
     }
 }

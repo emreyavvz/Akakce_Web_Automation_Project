@@ -40,7 +40,6 @@ public class TC_0701 extends BaseDriver {
         WebElement hesapSilmeInput=driver.findElement(By.xpath("((//form)[2]//input)[2]"));
         //ana hesap oldugu için sifre yanlış yaptım.
         hesapSilmeInput.sendKeys("Test1233212.", Keys.ENTER);
-
         BekleKapat();
     }
 }

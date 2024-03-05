@@ -38,7 +38,6 @@ public class TC_0702 extends BaseDriver {
         //tamamlamaya çalışır.
         WebElement hesapSilmeInput=driver.findElement(By.xpath("((//form)[2]//input)[2]"));
         hesapSilmeInput.sendKeys("Test1233212.", Keys.ENTER);
-
         BekleKapat();
     }
 }
