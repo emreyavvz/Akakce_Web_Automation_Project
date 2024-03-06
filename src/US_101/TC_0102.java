@@ -1,6 +1,7 @@
 package US_101;
 
 import Utility.BaseDriver;
+import Utility.MyFunc;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -65,12 +66,12 @@ public class TC_0102 extends BaseDriver {
         WebElement hesapAcSon = driver.findElement(By.xpath("//input[@id='rfb']"));
         hesapAcSon.click();
 
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
         WebElement hataYazisi = driver.findElement(By.xpath("//*[@id=\"m-w\"]/div/div[2]/div/p"));
         System.out.println(hataYazisi.getText());
 
-        //Assert.assertTrue("Hata çıkmadı", hataYazisi.getText().equals("Lütfen soyadınızı yazın"));
+        MyFunc.Bekle(2);
+
+        Assert.assertTrue("Hata çıkmadı", hataYazisi.getText().contains("Lütfen soyadınızı yazın"));
 
         BekleKapat();
     }

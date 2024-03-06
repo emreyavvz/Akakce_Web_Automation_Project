@@ -43,5 +43,7 @@ public class TC_0401 extends BaseDriver {
         } else System.out.println("TEST FAILD");
 
         Assert.assertTrue("Griş Yapılamadı !", hesapcontrol.getText().contains("Bug Busters"));
+
+        BekleKapat();
     }
 }
