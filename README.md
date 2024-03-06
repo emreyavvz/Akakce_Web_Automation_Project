@@ -1,11 +1,11 @@
 Selenium_Project_1_BugBusters
 
 CONTRIBUTORS:
-@alicomert
-@emreyavvz
-@GencerGnc
-@mdnozdl
-@ozgurrkarakus
+www.github.com/alicomert
+www.github.com/emreyavvz
+www.github.com/GencerGnc
+www.github.com/mdnozdl
+www.github.com/ozgurrkarakus
 
 Java Selenium Project: Account Management
 
