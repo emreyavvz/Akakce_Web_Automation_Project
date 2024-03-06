@@ -18,8 +18,6 @@ public class TC_0501 extends BaseDriver {
 
         WebElement giris = driver.findElement(By.xpath("//a[text()='Giriş Yap'] [1]"));
         giris.click();
-
-        driver.manage().window().maximize();
         
         MyFunc.Bekle(2);
         WebElement kullaniciAd = driver.findElement(By.xpath("//input[@id='life']"));

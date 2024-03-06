@@ -15,7 +15,7 @@ public class BaseDriver {
 
     static { //extends olması ve basta yer alması
         driver = new ChromeDriver();
-        //driver.manage().window().maximize(); //Ekranı max yapıyor
+        driver.manage().window().maximize(); //Ekranı max yapıyor
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         wait = new WebDriverWait(driver, Duration.ofSeconds(20));

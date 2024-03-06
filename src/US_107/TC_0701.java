@@ -10,7 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class TC_0701 extends BaseDriver {
     @Test
-    public void Test1() {
+    public void TC_0701() {
         // 1. Kullanıcı, Akakce.com sitesine tarayıcı üzerinden giriş yapar.
         driver.get("https://www.akakce.com/");
 

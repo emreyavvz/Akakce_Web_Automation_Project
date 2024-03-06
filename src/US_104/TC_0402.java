@@ -19,8 +19,8 @@ public class TC_0402 extends BaseDriver {
 
         wait.until(ExpectedConditions.urlToBe("https://www.akakce.com/akakcem/giris/"));
 
-        WebElement ıd = driver.findElement(By.xpath("//input[@id=\"life\"]"));
-        ıd.sendKeys("technostudy@protonmail.com");
+        WebElement id = driver.findElement(By.xpath("//input[@id=\"life\"]"));
+        id.sendKeys("technostudy@protonmail.com");
 
         WebElement sifre = driver.findElement(By.xpath("//input[@id=\"lifp\"]"));
         sifre.sendKeys("Test123321");

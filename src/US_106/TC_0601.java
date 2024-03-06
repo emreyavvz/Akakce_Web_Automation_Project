@@ -12,7 +12,6 @@ public class TC_0601 extends BaseDriver {
     @Test
     public void TC_0601() {
         driver.get("https://www.akakce.com/akakcem/giris/");
-        driver.manage().window().maximize();
 
         MyFunc.Bekle(1);
 

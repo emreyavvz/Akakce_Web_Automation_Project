@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 
 public class TC_0702 extends BaseDriver {
     @Test
-    public void Test1() {
+    public void TC_0702() {
         // 1. Kullanıcı, Akakce.com sitesine tarayıcı üzerinden giriş yapar.
         driver.get("https://www.akakce.com/");
 
@@ -39,7 +39,7 @@ public class TC_0702 extends BaseDriver {
         //7. Hesap silme işlemi sırasında, geçersiz bir şifre girer ve işlemi
         WebElement hesapSilme = driver.findElement(By.xpath("((//li[@class='user'])[2]/a)[4]"));
         hesapSilme.click();
-        
+
         //tamamlamaya çalışır.
         WebElement hesapSilmeInput = driver.findElement(By.xpath("((//form)[2]//input)[2]"));
         hesapSilmeInput.sendKeys("Test1233212.", Keys.ENTER);

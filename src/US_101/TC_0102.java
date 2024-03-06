@@ -14,7 +14,6 @@ public class TC_0102 extends BaseDriver {
     @Test
     public void TC_0102() {
         driver.get("https://www.akakce.com");
-        driver.manage().window().maximize();
 
         WebElement hesapAc = driver.findElement(By.xpath("//a[@rel='nofollow'][normalize-space()='Hesap Aç']"));
         hesapAc.click();

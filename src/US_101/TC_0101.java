@@ -10,7 +10,6 @@ public class TC_0101 extends BaseDriver {
     @Test
     public void TC_0101() {
         driver.get("https://www.akakce.com");
-        driver.manage().window().maximize();
 
         WebElement hesapAc = driver.findElement(By.xpath("//a[@rel='nofollow'][normalize-space()='Hesap Aç']"));
         hesapAc.click();
@@ -22,10 +21,10 @@ public class TC_0101 extends BaseDriver {
         soyAd.sendKeys("Yavuz");
 
         WebElement email = driver.findElement(By.xpath("//input[@id='rnufe1']"));
-        email.sendKeys("emre@gmail.com");
+        email.sendKeys("emre1@gmail.com");
 
         WebElement emailConfirmation = driver.findElement(By.xpath("//input[@id='rnufe2']"));
-        emailConfirmation.sendKeys("emre@gmail.com");
+        emailConfirmation.sendKeys("emre1@gmail.com");
 
         WebElement sifre = driver.findElement(By.xpath("//input[@id='rnufp1']"));
         sifre.sendKeys("123456789Aa!");
