@@ -1,5 +1,12 @@
 Selenium_Project_1_BugBusters
 
+CONTRIBUTORS:
+@alicomert
+@emreyavvz
+@GencerGnc
+@mdnozdl
+@ozgurrkarakus
+
 Java Selenium Project: Account Management
 
 Overview:
